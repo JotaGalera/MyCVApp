@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		355D25AE2718A57800A617B1 /* CVCellListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355D25AD2718A57800A617B1 /* CVCellListView.swift */; };
 		359476AA2715A0F300CB65D6 /* MyCVApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359476A92715A0F300CB65D6 /* MyCVApp.swift */; };
 		359476AC2715A0F300CB65D6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359476AB2715A0F300CB65D6 /* ContentView.swift */; };
 		359476AE2715A0F300CB65D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 359476AD2715A0F300CB65D6 /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		355D25AD2718A57800A617B1 /* CVCellListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVCellListView.swift; sourceTree = "<group>"; };
 		359476A62715A0F300CB65D6 /* MyCV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		359476A92715A0F300CB65D6 /* MyCVApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCVApp.swift; sourceTree = "<group>"; };
 		359476AB2715A0F300CB65D6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				359476D82715A7A700CB65D6 /* CVListView.swift */,
+				355D25AD2718A57800A617B1 /* CVCellListView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -297,6 +300,7 @@
 				359476AC2715A0F300CB65D6 /* ContentView.swift in Sources */,
 				359476AA2715A0F300CB65D6 /* MyCVApp.swift in Sources */,
 				359476D92715A7A700CB65D6 /* CVListView.swift in Sources */,
+				355D25AE2718A57800A617B1 /* CVCellListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
