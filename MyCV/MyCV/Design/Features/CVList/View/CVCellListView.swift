@@ -21,16 +21,17 @@ struct CVCellListView: View {
                         .frame(width: proxy.size.width/3,
                                height: proxy.size.height)
                 }else {
-                    
                     Image(systemName: "person.fill")
                         .resizable()
-                        .background(Color.gray)
+                        .background(
+                            Circle()
+                                .strokeBorder(Color.black,lineWidth: 4)
+                                .background(Circle().foregroundColor(Color.gray))
+                        )
                         .clipShape(Circle())
                         .frame(width: proxy.size.width/3,
                                height: proxy.size.height)
                 }
-                
-                Spacer()
                 
                 VStack(alignment: .leading) {
                     Text("\(cv.name) \(cv.lastName)")

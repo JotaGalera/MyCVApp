@@ -42,17 +42,13 @@ struct CVListView: View {
     
     var body: some View {
         NavigationView {
-            
             List(dataMock) { cv in
                 CVCellListView(cv: cv)
-                    
                     .frame(width: cellWidth,
                            height: cellHeight)
                     .padding(.top, /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
                     .padding(.bottom, /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
-                    
             }
-            
             .navigationBarTitle("CV List")
         }
     }
