@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
+    let configurator = CVListViewConfigurator()
+    
     var body: some View {
-        CVListView()
+        configurator.configure()
     }
 }
 

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "C4836DEF-6D69-4957-871C-A54E2F6ED0DD"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B7DC05A2-5512-4FBD-909D-E1AD83CFD22F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyCV/Design/Features/CVList/View/CVListView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DA5CF716-018F-480E-8327-00E39C56BCFB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyCV/Domain/UseCases/GetCvListUseCase.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "execute(onSuccess:onFailure:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "DA5CF716-018F-480E-8327-00E39C56BCFB - 9b97d98789443993"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyCV.GetCvListUseCaseImplementation.execute(onSuccess: (Swift.Array&lt;MyCV.CV&gt;) -&gt; (), onFailure: (MyCV.DomainError) -&gt; ()) -&gt; ()"
+                  moduleName = "MyCV"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/javier.galera/Desktop/MyCVApp/MyCV/MyCV/Domain/UseCases/GetCvListUseCase.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  uuid = "DA5CF716-018F-480E-8327-00E39C56BCFB - 932fa89701810aef"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Array&lt;MyCV.CV&gt;) -&gt; () in MyCV.GetCvListUseCaseImplementation.execute(onSuccess: (Swift.Array&lt;MyCV.CV&gt;) -&gt; (), onFailure: (MyCV.DomainError) -&gt; ()) -&gt; ()"
+                  moduleName = "MyCV"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/javier.galera/Desktop/MyCVApp/MyCV/MyCV/Domain/UseCases/GetCvListUseCase.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "41">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

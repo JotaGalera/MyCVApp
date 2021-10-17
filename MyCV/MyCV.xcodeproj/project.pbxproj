@@ -15,6 +15,12 @@
 		359476BC2715A0F300CB65D6 /* MyCVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359476BB2715A0F300CB65D6 /* MyCVTests.swift */; };
 		359476C72715A0F400CB65D6 /* MyCVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359476C62715A0F400CB65D6 /* MyCVUITests.swift */; };
 		359476D92715A7A700CB65D6 /* CVListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359476D82715A7A700CB65D6 /* CVListView.swift */; };
+		35BDC127271C871D00180A5F /* CV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35BDC126271C871D00180A5F /* CV.swift */; };
+		35BDC129271C87BB00180A5F /* GetCvListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35BDC128271C87BB00180A5F /* GetCvListUseCase.swift */; };
+		35BDC12C271C88B800180A5F /* DomainErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35BDC12B271C88B800180A5F /* DomainErrors.swift */; };
+		35BDC12F271C89A300180A5F /* CVRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35BDC12E271C89A300180A5F /* CVRepository.swift */; };
+		35BDC131271C8FE700180A5F /* CVListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35BDC130271C8FE700180A5F /* CVListViewModel.swift */; };
+		35BDC133271C950600180A5F /* CVListViewConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35BDC132271C950600180A5F /* CVListViewConfigurator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		359476C62715A0F400CB65D6 /* MyCVUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCVUITests.swift; sourceTree = "<group>"; };
 		359476C82715A0F400CB65D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		359476D82715A7A700CB65D6 /* CVListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVListView.swift; sourceTree = "<group>"; };
+		35BDC126271C871D00180A5F /* CV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CV.swift; sourceTree = "<group>"; };
+		35BDC128271C87BB00180A5F /* GetCvListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCvListUseCase.swift; sourceTree = "<group>"; };
+		35BDC12B271C88B800180A5F /* DomainErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainErrors.swift; sourceTree = "<group>"; };
+		35BDC12E271C89A300180A5F /* CVRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVRepository.swift; sourceTree = "<group>"; };
+		35BDC130271C8FE700180A5F /* CVListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVListViewModel.swift; sourceTree = "<group>"; };
+		35BDC132271C950600180A5F /* CVListViewConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVListViewConfigurator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +111,8 @@
 		359476A82715A0F300CB65D6 /* MyCV */ = {
 			isa = PBXGroup;
 			children = (
+				35BDC12D271C898700180A5F /* Data */,
+				35BDC124271C86E800180A5F /* Domain */,
 				359476D42715A75A00CB65D6 /* Design */,
 				359476A92715A0F300CB65D6 /* MyCVApp.swift */,
 				359476AB2715A0F300CB65D6 /* ContentView.swift */,
@@ -155,6 +169,8 @@
 			isa = PBXGroup;
 			children = (
 				359476D72715A78D00CB65D6 /* View */,
+				35BDC130271C8FE700180A5F /* CVListViewModel.swift */,
+				35BDC132271C950600180A5F /* CVListViewConfigurator.swift */,
 			);
 			path = CVList;
 			sourceTree = "<group>";
@@ -166,6 +182,40 @@
 				355D25AD2718A57800A617B1 /* CVCellListView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		35BDC124271C86E800180A5F /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				35BDC12A271C87C000180A5F /* UseCases */,
+				35BDC125271C86F200180A5F /* BOs */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		35BDC125271C86F200180A5F /* BOs */ = {
+			isa = PBXGroup;
+			children = (
+				35BDC126271C871D00180A5F /* CV.swift */,
+				35BDC12B271C88B800180A5F /* DomainErrors.swift */,
+			);
+			path = BOs;
+			sourceTree = "<group>";
+		};
+		35BDC12A271C87C000180A5F /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				35BDC128271C87BB00180A5F /* GetCvListUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		35BDC12D271C898700180A5F /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				35BDC12E271C89A300180A5F /* CVRepository.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,7 +350,13 @@
 				359476AC2715A0F300CB65D6 /* ContentView.swift in Sources */,
 				359476AA2715A0F300CB65D6 /* MyCVApp.swift in Sources */,
 				359476D92715A7A700CB65D6 /* CVListView.swift in Sources */,
+				35BDC127271C871D00180A5F /* CV.swift in Sources */,
+				35BDC133271C950600180A5F /* CVListViewConfigurator.swift in Sources */,
 				355D25AE2718A57800A617B1 /* CVCellListView.swift in Sources */,
+				35BDC131271C8FE700180A5F /* CVListViewModel.swift in Sources */,
+				35BDC129271C87BB00180A5F /* GetCvListUseCase.swift in Sources */,
+				35BDC12F271C89A300180A5F /* CVRepository.swift in Sources */,
+				35BDC12C271C88B800180A5F /* DomainErrors.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

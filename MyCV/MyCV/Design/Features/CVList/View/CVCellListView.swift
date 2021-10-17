@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CVCellListView: View {
-    let cv: CVMock
+    @State var cv: CV
     
     @State var favImage: Bool = true
     
@@ -88,7 +88,7 @@ struct CVCellListView: View {
 
 struct CVCellListView_Previews: PreviewProvider {
     static var previews: some View {
-        CVCellListView(cv: CVMock(name: "Mock",
+        CVCellListView(cv: CV(name: "Mock",
                                   lastName: "Mock",
                                   dateOfBirth: "10/10/1989",
                                   career: "Programmer",
