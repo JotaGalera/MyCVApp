@@ -21,6 +21,7 @@
 		35BDC12F271C89A300180A5F /* CVRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35BDC12E271C89A300180A5F /* CVRepository.swift */; };
 		35BDC131271C8FE700180A5F /* CVListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35BDC130271C8FE700180A5F /* CVListViewModel.swift */; };
 		35BDC133271C950600180A5F /* CVListViewConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35BDC132271C950600180A5F /* CVListViewConfigurator.swift */; };
+		35FEA90B2721D55B00961604 /* ApiDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FEA90A2721D55B00961604 /* ApiDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		35BDC12E271C89A300180A5F /* CVRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVRepository.swift; sourceTree = "<group>"; };
 		35BDC130271C8FE700180A5F /* CVListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVListViewModel.swift; sourceTree = "<group>"; };
 		35BDC132271C950600180A5F /* CVListViewConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVListViewConfigurator.swift; sourceTree = "<group>"; };
+		35FEA90A2721D55B00961604 /* ApiDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,9 +215,26 @@
 		35BDC12D271C898700180A5F /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				35BDC12E271C89A300180A5F /* CVRepository.swift */,
+				35FEA9092721D52E00961604 /* DataSource */,
+				35FEA9072721D4F800961604 /* Repositories */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		35FEA9072721D4F800961604 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				35BDC12E271C89A300180A5F /* CVRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		35FEA9092721D52E00961604 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				35FEA90A2721D55B00961604 /* ApiDataSource.swift */,
+			);
+			path = DataSource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -353,6 +372,7 @@
 				35BDC127271C871D00180A5F /* CV.swift in Sources */,
 				35BDC133271C950600180A5F /* CVListViewConfigurator.swift in Sources */,
 				355D25AE2718A57800A617B1 /* CVCellListView.swift in Sources */,
+				35FEA90B2721D55B00961604 /* ApiDataSource.swift in Sources */,
 				35BDC131271C8FE700180A5F /* CVListViewModel.swift in Sources */,
 				35BDC129271C87BB00180A5F /* GetCvListUseCase.swift in Sources */,
 				35BDC12F271C89A300180A5F /* CVRepository.swift in Sources */,

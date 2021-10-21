@@ -10,7 +10,8 @@ import SwiftUI
 
 class CVListViewConfigurator {
     func configure() -> CVListView {
-        let repository = CVRepositoryImplementation()
+        let dataSource = ApiDataSourceImplementation()
+        let repository = CVRepositoryImplementation(dataSource: dataSource)
         let getCvListUseCase = GetCvListUseCaseImplementation(repository: repository)
         let cvListVM = CVListViewModel(getCvListUseCase: getCvListUseCase)
         

@@ -8,26 +8,21 @@
 import Foundation
 
 protocol CVRepository {
-    func getCVList(onSuccess: @escaping ([CV])->Void, onFailure: @escaping (DomainError)->Void )
+    func getCVList(onSuccess: @escaping ([CV]) -> Void, onFailure: @escaping (DomainError) -> Void)
 }
 
 class CVRepositoryImplementation: CVRepository {
-    let dataMock: [CV] = [
-        CV(name: "Ben",
-               lastName: "Mock",
-               dateOfBirth: "09/27/1996",
-               career: "Odontology",
-               specialization: "Periodontist",
-               experience: "6 months working on a private clinic",
-               tags: ["Teeths", "Dentistry", "Mock", "MockMock"]),
-        CV(name: "Clark",
-               lastName: "Mock",
-               dateOfBirth: "09/27/1996",
-               career: "Nurse",
-               experience: "No have")
-    ]
+    let dataSource: ApiDataSource
+    
+    init(dataSource: ApiDataSource) {
+        self.dataSource = dataSource
+    }
     
     func getCVList(onSuccess: @escaping ([CV]) -> Void, onFailure: @escaping (DomainError) -> Void) {
-        onSuccess(dataMock)
+        dataSource.getCvList(onSuccess: { data in
+            onSuccess(data)
+        }, onFailure: { error in
+            onFailure(error)
+        })
     }
 }

@@ -8,7 +8,7 @@
 import Foundation
 
 protocol GetCvListUseCase {
-    func execute(onSuccess: @escaping ([CV])->Void, onFailure: @escaping (DomainError)->Void)
+    func execute(onSuccess: @escaping ([CV]) -> Void, onFailure: @escaping (DomainError) -> Void)
 }
 
 class GetCvListUseCaseImplementation: GetCvListUseCase {
